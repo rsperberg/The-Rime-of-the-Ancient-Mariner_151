@@ -33,7 +33,7 @@ var replacements = [
     { searchFor: / - /g, replaceWith: " — "},    //  em dash between spaces
     { searchFor: /(\w)-- /g, replaceWith: "$1— "},    //  em dash after character followed by space
     { searchFor: /(\w|!|,|”)--$/gm, replaceWith: "$1—"},    //  em dash after character at end of line
-    { searchFor: /(\w|”)--(\w|“)/gm, replaceWith: "$1—$2"}    //  em dash after character at end of line
+    { searchFor: /(\w|”)--(\w|“|\s)/gm, replaceWith: "$1—$2"}    //  em dash between characters (and between quotes)
 ];
 // using package.json script: cleanup to read README.md via cat
 var aFile = fs.readFile('/dev/stdin', 'utf8', function (err,data) {
