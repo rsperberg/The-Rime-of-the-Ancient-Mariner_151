@@ -18,12 +18,14 @@ var replacements = [
     { searchFor: /'m\b/g, replaceWith: "’m"},    //  I'm
     { searchFor: /'re\b/g, replaceWith: "’re"},    //  you're
     { searchFor: /'s\b/g, replaceWith: "’s"},    //  it's
+    { searchFor: /s'(\s)/g, replaceWith: "s’$1"},    //  plural possessive
     { searchFor: /'st\b/g, replaceWith: "’st"},    //  look'st (Rime of the Ancient Mariner)
     { searchFor: /'t\b/g, replaceWith: "’t"},   //  don't
     { searchFor: /'ve\b/g, replaceWith: "’ve"},   //  I've
     { searchFor: /(\s)'(\d\ds)/g, replaceWith: "$1’$2"},   //  ’90s
     { searchFor: /O'R/g, replaceWith: "O’R"},    //  O'Reilly
     { searchFor: /(o|e)'e/g, replaceWith: "$1’e"},    //  o'er, ne'er (Rime)
+    { searchFor: /'(em|gan)\b/g, replaceWith: "’em"},    //  'em, 'gan  (Rime)
     { searchFor: /",/g, replaceWith: ',”'},    // comma outside quote mark
     { searchFor: /"\./g, replaceWith: '.”'},    // period outside quote mark (transpose only)
     { searchFor: /"\b/g, replaceWith: '“'},    //  open quote (eg, precedes a 'word boundary')
