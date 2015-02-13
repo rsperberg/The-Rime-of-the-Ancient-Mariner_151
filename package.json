@@ -1,0 +1,20 @@
+{
+  "name": "The-Rime-of-the-Ancient-Mariner_151",
+  "version": "0.0.1",
+  "description": "Fork from part of Project Gitenberg",
+  "scripts": {
+    "cleanup": "cat 151.txt | node scripts/cleanup.js > build/151.txt"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rsperberg/The-Rime-of-the-Ancient-Mariner_151"
+  },
+  "author": "Project Gitenberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rsperberg/The-Rime-of-the-Ancient-Mariner_151/issues"
+  }
+}
