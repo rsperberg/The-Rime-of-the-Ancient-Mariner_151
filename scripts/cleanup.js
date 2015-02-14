@@ -23,7 +23,7 @@ var replacements = [
     { searchFor: /'t\b/g, replaceWith: "’t"},   //  don't
     { searchFor: /'ve\b/g, replaceWith: "’ve"},   //  I've
     { searchFor: /(\s)'(\d\ds)/g, replaceWith: "$1’$2"},   //  ’90s
-    { searchFor: /O'R/g, replaceWith: "O’R"},    //  O'Reilly
+    { searchFor: /O'([A-Z])/g, replaceWith: "O’$1"},    //  O'Reilly
     { searchFor: /(o|e)'e/g, replaceWith: "$1’e"},    //  o'er, ne'er (Rime)
     { searchFor: /'(em|gan)\b/g, replaceWith: "’em"},    //  'em, 'gan  (Rime)
     { searchFor: /",/g, replaceWith: ',”'},    // comma outside quote mark
